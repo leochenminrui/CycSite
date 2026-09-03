@@ -1,4 +1,4 @@
-# CASPer
+# CycSite
 
 Code and data for **Site-Conditioned Edit Chemistry for Cyclic Peptide
 Permeability Modeling**.
