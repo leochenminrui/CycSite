@@ -1,0 +1,32 @@
+{
+  "feature_set": "Site",
+  "estimator": "random_forest",
+  "family": "tree",
+  "seed": 26,
+  "split_type": "random",
+  "status": "completed",
+  "test_metrics": {
+    "rmse": 0.9644552727149543,
+    "mae": 0.6217226738615468,
+    "r2": 0.2873428900726631,
+    "spearman": 0.5908590915922829
+  },
+  "val_metrics": {
+    "rmse": 0.9450521816884877,
+    "mae": 0.6056495760481192,
+    "r2": 0.31248120868576834,
+    "spearman": 0.6056909860476472
+  },
+  "selection_metric": "validation RMSE",
+  "best_validation_rmse": 0.9450521816884877,
+  "runtime_seconds": 69.95338779198937,
+  "n_trials": 10,
+  "hpo": true,
+  "best_params": {
+    "n_estimators": 489,
+    "max_depth": 14,
+    "min_samples_split": 12,
+    "min_samples_leaf": 3
+  },
+  "needs_scale": false
+}

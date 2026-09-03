@@ -1,0 +1,47 @@
+{
+  "strategy_name": "random",
+  "feasible": true,
+  "train_count": 5056,
+  "val_count": 1084,
+  "test_count": 1084,
+  "strategy_params": {
+    "train_ratio": 0.7,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15
+  },
+  "random_seed": 42,
+  "split_version": "1.0.0",
+  "leakage_analysis": {
+    "sequence_similarity": {
+      "max_identity": 1.0,
+      "pct_high_similarity": 17.94,
+      "mean_test_train": 0.47204122877122884
+    },
+    "scaffold_overlap": {
+      "n_shared": 143,
+      "pct_test_shared": 84.31734317343174
+    },
+    "edit_pattern_similarity": {
+      "cosine_similarity": 0.9988387367760322,
+      "js_divergence": 7.657220451141736e-05
+    },
+    "label_distribution": {
+      "ks_statistic": 0.0095754122098183,
+      "ks_pvalue": 0.9999954093230373,
+      "train": {
+        "mean": -5.906929329740111,
+        "std": 1.1079675820523534
+      },
+      "val": {
+        "mean": -5.9329621079391135,
+        "std": 1.139760239663479
+      },
+      "test": {
+        "mean": -5.924800058066421,
+        "std": 1.1424620444373712
+      }
+    },
+    "overall_risk": "high"
+  },
+  "creation_timestamp": "2026-06-16T16:51:59.916978"
+}

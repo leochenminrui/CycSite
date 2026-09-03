@@ -1,0 +1,30 @@
+{
+  "feature_set": "Site+Context",
+  "estimator": "elasticnet",
+  "family": "linear",
+  "seed": 7,
+  "split_type": "random",
+  "status": "completed",
+  "test_metrics": {
+    "rmse": 1.0366015822824681,
+    "mae": 0.6796710307397607,
+    "r2": 0.1767340118103895,
+    "spearman": 0.5122894100315204
+  },
+  "val_metrics": {
+    "rmse": 1.0425615299949567,
+    "mae": 0.6819964826729847,
+    "r2": 0.16328725166541047,
+    "spearman": 0.5070527029928223
+  },
+  "selection_metric": "validation RMSE",
+  "best_validation_rmse": 1.0425615299949567,
+  "runtime_seconds": 1.6430692910216749,
+  "n_trials": 10,
+  "hpo": true,
+  "best_params": {
+    "alpha": 2.86978747786718e-05,
+    "l1_ratio": 0.7743204163953123
+  },
+  "needs_scale": true
+}

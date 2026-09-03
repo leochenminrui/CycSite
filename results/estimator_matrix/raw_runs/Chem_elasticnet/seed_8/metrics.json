@@ -1,0 +1,30 @@
+{
+  "feature_set": "Chem",
+  "estimator": "elasticnet",
+  "family": "linear",
+  "seed": 8,
+  "split_type": "random",
+  "status": "completed",
+  "test_metrics": {
+    "rmse": 1.079944206881132,
+    "mae": 0.6987172000126918,
+    "r2": 0.10644955163303049,
+    "spearman": 0.4723071519643612
+  },
+  "val_metrics": {
+    "rmse": 1.0688843417186724,
+    "mae": 0.7065903451751685,
+    "r2": 0.12050287345715827,
+    "spearman": 0.4819505018397563
+  },
+  "selection_metric": "validation RMSE",
+  "best_validation_rmse": 1.0688843417186724,
+  "runtime_seconds": 0.1284392499946989,
+  "n_trials": 10,
+  "hpo": true,
+  "best_params": {
+    "alpha": 0.00024909784355898974,
+    "l1_ratio": 0.021170828191881298
+  },
+  "needs_scale": true
+}

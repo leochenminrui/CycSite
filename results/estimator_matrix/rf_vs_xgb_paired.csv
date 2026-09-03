@@ -1,0 +1,2 @@
+contrast,metric,mean_difference,sample_sd,t_ci95_low,t_ci95_high,bootstrap_bca_ci95_low,bootstrap_bca_ci95_high,p_value_signflip_mc,signflip_resamples,n_pairs
+Random Forest minus XGBoost for A+B+C,r2,-0.014835072388858953,0.01087309759242852,-0.018895153755441485,-0.010774991022276421,-0.018223754410139303,-0.010535351825990868,9.99999000001e-07,1000000,30

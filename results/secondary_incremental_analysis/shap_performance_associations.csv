@@ -1,0 +1,4 @@
+Performance_Metric,Attribution_Group,Spearman_Rho,Two_Sided_Asymptotic_P,N_Seeds,Multiplicity_Adjusted,Analysis_Label
+validation R2,Chemistry,0.8046718576195773,8.34784972336776e-08,30,False,exploratory performance-conditioned SHAP sensitivity
+validation R2,Site,-0.907007786429366,4.977252303651593e-12,30,False,exploratory performance-conditioned SHAP sensitivity
+validation R2,Context,0.32502780867630704,0.07968031394157483,30,False,exploratory performance-conditioned SHAP sensitivity

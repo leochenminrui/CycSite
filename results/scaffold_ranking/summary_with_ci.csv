@@ -1,0 +1,6 @@
+model,n_families_total,n_families_with_valid_pairs,overall_pairwise_accuracy,mean_family_pairwise_accuracy,family_bootstrap_ci95_low,family_bootstrap_ci95_high,bootstrap_replicates,bootstrap_unit,interval
+Chemistry,49,48,0.679587029605025,0.6394603771343784,0.5954281757234876,0.6808684776521238,5000,peptide family,percentile
+Chemistry + Site,49,48,0.6803666647900464,0.6430703334527971,0.5943572521875904,0.683516141280477,5000,peptide family,percentile
+Chemistry + Site + Context,49,48,0.6798695279763868,0.6272782469483557,0.5801788426717438,0.6698723624659129,5000,peptide family,percentile
+ECFP,49,48,0.681770108656313,0.5740370343373207,0.5273784759116885,0.6159592171723094,5000,peptide family,percentile
+Sequence,49,48,0.5640758583527027,0.5951677981197842,0.5491545874583664,0.6396296531953558,5000,peptide family,percentile

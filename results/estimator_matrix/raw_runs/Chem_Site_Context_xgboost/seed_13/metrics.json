@@ -1,0 +1,36 @@
+{
+  "feature_set": "Chem+Site+Context",
+  "estimator": "xgboost",
+  "family": "tree",
+  "seed": 13,
+  "split_type": "random",
+  "status": "completed",
+  "test_metrics": {
+    "rmse": 0.8317140557002182,
+    "mae": 0.49855004434830696,
+    "r2": 0.47001384957073167,
+    "spearman": 0.7443450093946103
+  },
+  "val_metrics": {
+    "rmse": 0.8409325745695405,
+    "mae": 0.5040623033419342,
+    "r2": 0.4556285424144657,
+    "spearman": 0.7571091110201088
+  },
+  "selection_metric": "validation RMSE",
+  "best_validation_rmse": 0.8409325745695405,
+  "runtime_seconds": 14.64023766698665,
+  "n_trials": 10,
+  "hpo": true,
+  "best_params": {
+    "n_estimators": 678,
+    "max_depth": 8,
+    "learning_rate": 0.01110666233914745,
+    "subsample": 0.6492247354445897,
+    "colsample_bytree": 0.5292562459410374,
+    "min_child_weight": 9,
+    "reg_alpha": 0.00017263313893487394,
+    "reg_lambda": 0.05740314154986399
+  },
+  "needs_scale": false
+}

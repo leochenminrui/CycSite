@@ -1,0 +1,2 @@
+n_samples,minimum_length,maximum_length,single_residue_peptides,missing_smiles,invalid_smiles,rdkit_descriptor_count,observed_monomer_symbols,observed_backbone_mapped_symbols,mono_placeholder_symbols,mono_placeholder_raw_records,mono_placeholder_retained_records,mono_placeholder_retained_occurrences,unmapped_other_symbols,unmapped_other_symbol_list
+7224,3,14,0,0,0,217,277,173,99,1192,1118,1290,0,

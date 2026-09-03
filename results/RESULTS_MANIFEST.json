@@ -1,0 +1,81 @@
+{
+  "artifact_checksums": {
+    "data/splits/CycPeptMPDB_PAMPA/sequence_cluster/metadata.json": "7a38ccfe8d3201f1497ffe525616a2e8f5bc9061738e0860899980f9572988bc",
+    "results/SECONDARY_ANALYSIS_AUDIT.md": "19d07d6af842316b00ac122ca98d8c3353fe1196d9152c327420252df13f196f",
+    "results/audits/mono_placeholder_records.csv": "358ea814ff18abd8f2237461f9b2c98363e0e0a6cb45d56213a570faeb62359c",
+    "results/audits/mono_test_subset_paired_contrasts.csv": "6fb417d6fc84aa31d96d735c5e6e488086c11634e7a3d909d0031e088c70fd34",
+    "results/audits/monomer_coverage.csv": "abc5ca9c93737ba87669db0f238662038c460bb09adce26858354ceb28edaceb",
+    "results/audits/reviewer_audit_summary.csv": "f72ea6ba501c767ae4b1ad13042c1340397f9f753258cced12085bceecc05b48",
+    "results/estimator_matrix/rf_vs_xgb_paired.csv": "64f00f305625f1a1213acc4910cce148f89a5559220a6bb8d0e41e2ad21bea3f",
+    "results/estimator_matrix/seed_level_results.csv": "23ae92ff4ad99959592deef96016c938eebcebc37862a5591e4a794e137dfb12",
+    "results/estimator_matrix/summary_with_ci.csv": "8ce3c187044397bd108a0428f0f4cd10cc8ae8a452d278c9dc58e7847e75c207",
+    "results/feature_to_block_mapping.json": "f94f1d5f275087208bcb1e91592f5da5401df9385422e762a4d578c12f90c29c",
+    "results/key_results.json": "6c62d761661e6b9bc831d5030e3a921dab9bf47d77adef8e2ffa196086176bd9",
+    "results/mono_exclusion_sensitivity/paired_contrasts.csv": "406e220b0607aa11406d609f251830664e0dc72d01537ac92b4f69e707119fc3",
+    "results/mono_exclusion_sensitivity/seed_level_results.csv": "10ed8b0689873d58b9b422e17062898a58ef5816896ac65d8824ffe497fb14e7",
+    "results/mono_exclusion_sensitivity/summary_with_ci.csv": "fb53d9eba71d8b44c6d27224b3deef2a976aadbdbf8850d3309d7b0bc9ef2b52",
+    "results/paired_comparisons.csv": "884ade64c9f07cb04d48a40e49116b39bf602304f1bee53cc41feda57010cea6",
+    "results/scaffold_ranking/family_level_results.csv": "13651fe022d75a0743c58ba337b1dcaa2b7688b2968d44b4637617b840596da9",
+    "results/scaffold_ranking/summary_with_ci.csv": "e119e738f6b11b6e16fec6c4b1e8076d26d0f872ee554bb2b66c350b97a4d4a9",
+    "results/secondary_incremental_analysis/analysis_metadata.json": "8aef7208bdbebe624cc72d8b31bf11849e8241980f6f5507f7de0f2f98861bcc",
+    "results/secondary_incremental_analysis/cross_estimator_paired_effects.csv": "cee53337a302344406eb525dca290ab5693e8815e423029e9cf9750d2ab211db",
+    "results/secondary_incremental_analysis/cross_estimator_paired_seed_differences.csv": "7ebe9503c2961d0d7c3dee6e3d26d3c54c8ad55bfc87be34922130a0b9396131",
+    "results/secondary_incremental_analysis/shap_performance_associations.csv": "e0b8af3f9cd928676164750191fa50bd683b7874a010de6988f9de7ba09b031c",
+    "results/secondary_incremental_analysis/shap_performance_seed_level.csv": "e75b485933d39399e5420032ea84c9bbaf208477ced7809fdb8664aa62d9ccf0",
+    "results/seed_level_results.csv": "c6dfdafe812fbad84631f635acb61ecf676bc5b9d8f9608e41e1eeb053b308d0",
+    "results/shap/group_summary_with_ci.csv": "40364b4305ba965ed60ab89cddb4961a66dc58afd218bacb61d09e4105de60f1",
+    "results/shap/pairwise_seed_stability.csv": "09cd37b0be0fe327b8cdd67ea3d4dfa0e61e0f5dcc02248ceb97f24cff816032",
+    "results/shap/seed_level_group_attribution.csv": "a3488568f83df882e60ebd3fdc0cf768b5be37818708c0772cccae6fa093aa3a",
+    "results/summary.json": "2168685ede631b9c403e4945e9a835371731aecaa5d41de6e18a032a93d05053",
+    "results/summary_with_ci.csv": "26bbf7d577f2d2e0bf6f8560529bcf6a80179017c003033ffa37eeeabfe5b198",
+    "results/time_forward/cutoff_statistics.csv": "e586cf1eff141a2b91b64a61d7b90dbe535861603f6ea450707ffd7c81423238",
+    "results/time_forward/model_performance_with_ci.csv": "d881ae7efb0ffa46f57d113197dab3bb4e79d598beefd842607c1fc6fb63695e"
+  },
+  "code_commit": null,
+  "completion": {
+    "estimator_matrix": {
+      "completed": 1050,
+      "expected": 1050
+    },
+    "mono_exclusion_sensitivity": {
+      "completed": 180,
+      "expected": 180
+    },
+    "primary_benchmark": {
+      "completed": 600,
+      "expected": 600
+    },
+    "scaffold_families": 49,
+    "secondary_cross_estimator_tests": 10,
+    "shap_seed_group_rows": 720,
+    "shap_sensitivity_seeds": 30,
+    "time_forward_cutoffs": 8
+  },
+  "dataset_checksum": "663c06cc870c65b3f88c27212e9736758c015cbecdaa21cb67ffb78f11d72355",
+  "invalid_estimator_metrics": [],
+  "invalid_mono_sensitivity_metrics": [],
+  "invalid_primary_metrics": [],
+  "missing_required_artifacts": [],
+  "platform": "macOS-15.6-arm64-arm-64bit",
+  "python": "3.12.14 (main, Aug 12 2026, 13:57:54) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "raw_data_checksums": {
+    "data/raw/CycPeptMPDB_Peptide_All.csv": "54e2be28199c0c3a8d6d0923192161d418eca8efd5c9b804e9bceae2faa52e51",
+    "data/raw/CycPeptMPDB_Peptide_Assay_PAMPA.csv": "02da1cfc18a92b3ae6e70152445b23c05ce6bb0b6ed10fc7c9e141fbd9462fde"
+  },
+  "split_checksums": {
+    "data/splits/CycPeptMPDB_PAMPA/random/test.jsonl": "9b6718b3209659e4b95bc767e36a27def09b8d8ad66b806186a4c8a81b917f55",
+    "data/splits/CycPeptMPDB_PAMPA/random/train.jsonl": "c71e110a2c2f79df40dd6b15def6ce337b50ab2fac2d09020de83829eaef24cc",
+    "data/splits/CycPeptMPDB_PAMPA/random/val.jsonl": "cb07e48b09216a98e501f8a0d833e8f681d29f0d44e7cb175c1d13f986a98375",
+    "data/splits/CycPeptMPDB_PAMPA/random_no_mono/test.jsonl": "a4f59204d6668038e488142a9e95e77b9da0f84ca8fab7e26854c51917b46fec",
+    "data/splits/CycPeptMPDB_PAMPA/random_no_mono/train.jsonl": "89b6030a053f131e755fdf50a5c3b8d12fb069e3a511672a7ce14a6f50e59994",
+    "data/splits/CycPeptMPDB_PAMPA/random_no_mono/val.jsonl": "a1da5658e4fc9e507c528979f94ffb641705d4244d12c522c91c5b83bbbb261d",
+    "data/splits/CycPeptMPDB_PAMPA/sequence_cluster/test.jsonl": "31a2f5f4b6cbc190015019c346883b8cd8b620f87739b53607f4ce0a45bd407e",
+    "data/splits/CycPeptMPDB_PAMPA/sequence_cluster/train.jsonl": "e0c1e5d3acc0989335ea21128ea6c8a98decc294d3c54bf8b8bb733c8f276dcf",
+    "data/splits/CycPeptMPDB_PAMPA/sequence_cluster/val.jsonl": "e8af520a68efe59a172ad4c9c75a2b87373e6aeceb4b2c73dffc8aa0db2ac41b",
+    "data/splits/CycPeptMPDB_PAMPA/sequence_cluster_no_mono/test.jsonl": "857bba1ae65ae0cc28d9a2aacbac4165d6ff4ecd85d13ca834df830f9e9d8a87",
+    "data/splits/CycPeptMPDB_PAMPA/sequence_cluster_no_mono/train.jsonl": "d34d3c5dabb93006e9adc185524e194b1dc4a25e5eeafee267badce8ce560290",
+    "data/splits/CycPeptMPDB_PAMPA/sequence_cluster_no_mono/val.jsonl": "2df7e3b20822d66516817a5d003008313af2c9968d32223adecf216fe7268bd7"
+  },
+  "status": "COMPLETE",
+  "timestamp_utc": "2026-09-03T02:59:52.561300+00:00"
+}

@@ -1,0 +1,32 @@
+{
+  "feature_set": "Chem+Context",
+  "estimator": "random_forest",
+  "family": "tree",
+  "seed": 1,
+  "split_type": "random",
+  "status": "completed",
+  "test_metrics": {
+    "rmse": 0.8784533920554035,
+    "mae": 0.5245180129498215,
+    "r2": 0.4087735063510397,
+    "spearman": 0.7096927681320725
+  },
+  "val_metrics": {
+    "rmse": 0.8742661401459758,
+    "mae": 0.5303823007315762,
+    "r2": 0.4116167345387003,
+    "spearman": 0.7396067001750101
+  },
+  "selection_metric": "validation RMSE",
+  "best_validation_rmse": 0.8742661401459758,
+  "runtime_seconds": 63.28538733400637,
+  "n_trials": 10,
+  "hpo": true,
+  "best_params": {
+    "n_estimators": 482,
+    "max_depth": 12,
+    "min_samples_split": 11,
+    "min_samples_leaf": 4
+  },
+  "needs_scale": false
+}

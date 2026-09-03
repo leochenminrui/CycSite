@@ -1,0 +1,30 @@
+{
+  "feature_set": "Site",
+  "estimator": "elasticnet",
+  "family": "linear",
+  "seed": 26,
+  "split_type": "random",
+  "status": "completed",
+  "test_metrics": {
+    "rmse": 1.0549108296826124,
+    "mae": 0.7012914573026585,
+    "r2": 0.1473948719056246,
+    "spearman": 0.423449018562002
+  },
+  "val_metrics": {
+    "rmse": 1.0681055573992144,
+    "mae": 0.7122182899091436,
+    "r2": 0.12178400186901084,
+    "spearman": 0.41501879135783687
+  },
+  "selection_metric": "validation RMSE",
+  "best_validation_rmse": 1.0681055573992144,
+  "runtime_seconds": 1.7890054159797728,
+  "n_trials": 10,
+  "hpo": true,
+  "best_params": {
+    "alpha": 0.0007040600720615491,
+    "l1_ratio": 0.5190036497191947
+  },
+  "needs_scale": true
+}

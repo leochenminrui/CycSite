@@ -1,0 +1,28 @@
+{
+  "dataset": "CycPeptMPDB_PAMPA",
+  "total_samples": 7224,
+  "strategies": {
+    "random": {
+      "feasible": true,
+      "train_count": 5056,
+      "val_count": 1084,
+      "test_count": 1084,
+      "leakage_risk": "high"
+    },
+    "sequence_cluster": {
+      "feasible": true,
+      "nominal_70_15_15_feasible": false,
+      "train_count": 7030,
+      "val_count": 97,
+      "test_count": 97,
+      "components": [1, 39, 39],
+      "maximum_cross_partition_identity": 0.6923076923076923,
+      "leakage_risk": "strict identity isolation; small imbalanced holdouts"
+    }
+  },
+  "successful_strategies": [
+    "random",
+    "sequence_cluster"
+  ],
+  "recommended_strategy": "report random and strict sequence results together with their stated limitations"
+}

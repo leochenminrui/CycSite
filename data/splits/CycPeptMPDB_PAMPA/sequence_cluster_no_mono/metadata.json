@@ -1,0 +1,22 @@
+{
+  "strategy": "Mono-placeholder exclusion sensitivity",
+  "source_split": "sequence_cluster",
+  "exclusion_rule": "raw Sequence contains a token beginning with 'Mono'",
+  "splits": {
+    "train": {
+      "source_samples": 7030,
+      "retained_samples": 5964,
+      "excluded_samples": 1066
+    },
+    "val": {
+      "source_samples": 97,
+      "retained_samples": 64,
+      "excluded_samples": 33
+    },
+    "test": {
+      "source_samples": 97,
+      "retained_samples": 78,
+      "excluded_samples": 19
+    }
+  }
+}

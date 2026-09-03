@@ -1,0 +1,31 @@
+{
+  "feature_set": "Context",
+  "estimator": "svr",
+  "family": "kernel",
+  "seed": 9,
+  "split_type": "random",
+  "status": "completed",
+  "test_metrics": {
+    "rmse": 1.0247250198095241,
+    "mae": 0.6241062445821902,
+    "r2": 0.19549060695462395,
+    "spearman": 0.563266573518908
+  },
+  "val_metrics": {
+    "rmse": 0.9827075745653421,
+    "mae": 0.6007243991119253,
+    "r2": 0.25660163454739615,
+    "spearman": 0.6219751366421928
+  },
+  "selection_metric": "validation RMSE",
+  "best_validation_rmse": 0.9827075745653421,
+  "runtime_seconds": 16.395705707982415,
+  "n_trials": 10,
+  "hpo": true,
+  "best_params": {
+    "C": 66.30911453827736,
+    "gamma": 0.16404352013758172,
+    "epsilon": 0.4508759957358093
+  },
+  "needs_scale": true
+}

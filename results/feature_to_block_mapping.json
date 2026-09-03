@@ -1,0 +1,298 @@
+{
+  "schema": "frozen basic A/B1/B2/B3/C descriptor mapping",
+  "feature_count": 73,
+  "features": [
+    {
+      "feature": "mol_weight",
+      "block": "A"
+    },
+    {
+      "feature": "logp",
+      "block": "A"
+    },
+    {
+      "feature": "tpsa",
+      "block": "A"
+    },
+    {
+      "feature": "num_h_acceptors",
+      "block": "A"
+    },
+    {
+      "feature": "num_h_donors",
+      "block": "A"
+    },
+    {
+      "feature": "num_rotatable_bonds",
+      "block": "A"
+    },
+    {
+      "feature": "num_aromatic_rings",
+      "block": "A"
+    },
+    {
+      "feature": "num_aliphatic_rings",
+      "block": "A"
+    },
+    {
+      "feature": "num_edits",
+      "block": "A"
+    },
+    {
+      "feature": "num_edit_families",
+      "block": "A"
+    },
+    {
+      "feature": "anchor_count_total",
+      "block": "B1"
+    },
+    {
+      "feature": "anchor_count_unique",
+      "block": "B1"
+    },
+    {
+      "feature": "anchor_density",
+      "block": "B1"
+    },
+    {
+      "feature": "anchor_pos_mean",
+      "block": "B1"
+    },
+    {
+      "feature": "anchor_pos_std",
+      "block": "B1"
+    },
+    {
+      "feature": "anchor_pos_range",
+      "block": "B1"
+    },
+    {
+      "feature": "anchor_res_A",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_C",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_D",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_E",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_F",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_G",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_H",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_I",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_K",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_L",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_M",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_N",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_P",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_Q",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_R",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_S",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_T",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_V",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_W",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_res_Y",
+      "block": "B2"
+    },
+    {
+      "feature": "anchor_hydrophobic_frac",
+      "block": "B3"
+    },
+    {
+      "feature": "anchor_charged_frac",
+      "block": "B3"
+    },
+    {
+      "feature": "anchor_polar_frac",
+      "block": "B3"
+    },
+    {
+      "feature": "anchor_aromatic_frac",
+      "block": "B3"
+    },
+    {
+      "feature": "anchor_small_frac",
+      "block": "B3"
+    },
+    {
+      "feature": "anchor_proline_frac",
+      "block": "B3"
+    },
+    {
+      "feature": "anchor_terminal_frac",
+      "block": "B3"
+    },
+    {
+      "feature": "anchor_n_terminal_count",
+      "block": "B3"
+    },
+    {
+      "feature": "anchor_c_terminal_count",
+      "block": "B3"
+    },
+    {
+      "feature": "edit_family_n_terminal",
+      "block": "C"
+    },
+    {
+      "feature": "edit_family_c_terminal",
+      "block": "C"
+    },
+    {
+      "feature": "edit_family_sidechain",
+      "block": "C"
+    },
+    {
+      "feature": "edit_family_backbone",
+      "block": "C"
+    },
+    {
+      "feature": "edit_family_cyclization",
+      "block": "C"
+    },
+    {
+      "feature": "edit_family_substitution",
+      "block": "C"
+    },
+    {
+      "feature": "edit_family_other",
+      "block": "C"
+    },
+    {
+      "feature": "edit_type_count_unique",
+      "block": "C"
+    },
+    {
+      "feature": "edit_type_entropy",
+      "block": "C"
+    },
+    {
+      "feature": "attachment_type_count_unique",
+      "block": "C"
+    },
+    {
+      "feature": "has_cyclization",
+      "block": "C"
+    },
+    {
+      "feature": "has_backbone_mod",
+      "block": "C"
+    },
+    {
+      "feature": "edit_n_methylation",
+      "block": "C"
+    },
+    {
+      "feature": "edit_d_amino_acid",
+      "block": "C"
+    },
+    {
+      "feature": "edit_non_standard_aa",
+      "block": "C"
+    },
+    {
+      "feature": "edit_head_to_tail_cyclization",
+      "block": "C"
+    },
+    {
+      "feature": "edit_sidechain_cyclization",
+      "block": "C"
+    },
+    {
+      "feature": "edit_disulfide",
+      "block": "C"
+    },
+    {
+      "feature": "edit_acetylation",
+      "block": "C"
+    },
+    {
+      "feature": "edit_amidation",
+      "block": "C"
+    },
+    {
+      "feature": "edit_phosphorylation",
+      "block": "C"
+    },
+    {
+      "feature": "edit_other_types",
+      "block": "C"
+    },
+    {
+      "feature": "anchor_pair_count",
+      "block": "C"
+    },
+    {
+      "feature": "cyclization_ring_size",
+      "block": "C"
+    },
+    {
+      "feature": "edit_anchor_overlap",
+      "block": "C"
+    },
+    {
+      "feature": "sequence_length",
+      "block": "C"
+    },
+    {
+      "feature": "sequence_cyclic",
+      "block": "C"
+    },
+    {
+      "feature": "modification_rate",
+      "block": "C"
+    }
+  ]
+}

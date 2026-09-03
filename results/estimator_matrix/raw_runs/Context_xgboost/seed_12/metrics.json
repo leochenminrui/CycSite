@@ -1,0 +1,36 @@
+{
+  "feature_set": "Context",
+  "estimator": "xgboost",
+  "family": "tree",
+  "seed": 12,
+  "split_type": "random",
+  "status": "completed",
+  "test_metrics": {
+    "rmse": 0.9732477647714101,
+    "mae": 0.6261994867272146,
+    "r2": 0.27428973061181605,
+    "spearman": 0.5666073793882349
+  },
+  "val_metrics": {
+    "rmse": 0.9689443734373931,
+    "mae": 0.6285172790457401,
+    "r2": 0.27727898176892385,
+    "spearman": 0.606047446031763
+  },
+  "selection_metric": "validation RMSE",
+  "best_validation_rmse": 0.9689443734373931,
+  "runtime_seconds": 4.905486917006783,
+  "n_trials": 10,
+  "hpo": true,
+  "best_params": {
+    "n_estimators": 962,
+    "max_depth": 4,
+    "learning_rate": 0.02340287434554772,
+    "subsample": 0.8030415921794145,
+    "colsample_bytree": 0.972112568026521,
+    "min_child_weight": 9,
+    "reg_alpha": 1.031704681250057e-06,
+    "reg_lambda": 0.004452277146116934
+  },
+  "needs_scale": false
+}

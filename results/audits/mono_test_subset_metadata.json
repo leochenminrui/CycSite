@@ -1,0 +1,6 @@
+{
+  "analysis_type": "fixed-model held-out test-subset sensitivity; no retraining",
+  "mono_placeholder_definition": "raw Sequence token starts with 'Mono'",
+  "retained_records_with_mono_placeholder": 1118,
+  "limitations": "This analysis removes affected records only when calculating held-out metrics; it does not remove Mono-containing records from model fitting."
+}

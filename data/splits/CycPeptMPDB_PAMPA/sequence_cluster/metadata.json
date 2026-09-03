@@ -1,0 +1,37 @@
+{
+  "strategy": "strict_sequence_identity_connected_components",
+  "identity_definition": "optimal globalxx alignment matches / longer sequence length",
+  "identity_threshold": 0.7,
+  "threshold_comparison": ">=",
+  "n_total": 7224,
+  "n_unique_sequences": 1329,
+  "n_components": 79,
+  "threshold_edges": 9363,
+  "candidate_comparisons": 560229,
+  "largest_component_samples": 7030,
+  "largest_component_unique_sequences": 1209,
+  "nominal_70_15_15_impossible": true,
+  "assignment_policy": "largest component to train; remaining components balanced by samples, labels, unique sequences, and component count",
+  "cross_partition_max_identity": {
+    "train_vs_val": 0.6923076923076923,
+    "train_vs_test": 0.6923076923076923,
+    "val_vs_test": 0.6923076923076923
+  },
+  "splits": {
+    "train": {
+      "samples": 7030,
+      "unique_sequences": 1209,
+      "components": 1
+    },
+    "val": {
+      "samples": 97,
+      "unique_sequences": 60,
+      "components": 39
+    },
+    "test": {
+      "samples": 97,
+      "unique_sequences": 60,
+      "components": 39
+    }
+  }
+}

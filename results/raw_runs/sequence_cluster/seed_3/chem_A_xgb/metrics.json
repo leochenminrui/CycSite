@@ -1,0 +1,56 @@
+{
+  "model_id": "chem_A_xgb",
+  "model_name": "Chem-Only (Group A) + XGBoost",
+  "role": "primary_paper",
+  "seed": 3,
+  "split_type": "sequence_cluster",
+  "status": "completed",
+  "hpo": true,
+  "n_features": 10,
+  "n_train": 7030,
+  "n_val": 97,
+  "n_test": 97,
+  "split_fingerprint_sha256": "e3858628de2bb76196d5aa926df68406a2af8e9ca67c22f2279fb7df7b0eee44",
+  "val_metrics": {
+    "rmse": 1.595943594186132,
+    "mae": 1.1299463750898224,
+    "r2": -0.07401561145238067,
+    "spearman": 0.4355040445253202
+  },
+  "test_metrics": {
+    "rmse": 1.7070664273303655,
+    "mae": 1.323951394746806,
+    "r2": -0.20282503807399244,
+    "spearman": 0.23026945753110828,
+    "pearson": 0.1478829732954916,
+    "kendall_tau": 0.1610091104845274,
+    "n_samples": 97,
+    "variance_ratio": 0.38161728182113835
+  },
+  "best_params": {
+    "n_estimators": 740,
+    "max_depth": 4,
+    "learning_rate": 0.16408334880636188,
+    "subsample": 0.5104419651320511,
+    "colsample_bytree": 0.8598403590323991,
+    "min_child_weight": 3,
+    "reg_alpha": 1.19454068512805e-05,
+    "reg_lambda": 0.0016606478941784831,
+    "gamma": 0.8369956820479197
+  },
+  "feature_importance_top30": {
+    "num_edit_families": "0.12612215",
+    "num_aromatic_rings": "0.12049247",
+    "logp": "0.11431003",
+    "mol_weight": "0.10192465",
+    "num_aliphatic_rings": "0.10109188",
+    "num_h_acceptors": "0.099848874",
+    "tpsa": "0.093565755",
+    "num_rotatable_bonds": "0.09017429",
+    "num_h_donors": "0.07791225",
+    "num_edits": "0.07455764"
+  },
+  "runtime_seconds": 17.075414708000608,
+  "selection_metric": "validation RMSE",
+  "n_optuna_trials": 50
+}
