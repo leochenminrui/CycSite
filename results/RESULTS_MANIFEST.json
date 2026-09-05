@@ -2,21 +2,34 @@
   "artifact_checksums": {
     "data/splits/CycPeptMPDB_PAMPA/sequence_cluster/metadata.json": "7a38ccfe8d3201f1497ffe525616a2e8f5bc9061738e0860899980f9572988bc",
     "results/SECONDARY_ANALYSIS_AUDIT.md": "19d07d6af842316b00ac122ca98d8c3353fe1196d9152c327420252df13f196f",
+    "results/audits/descriptor_finiteness.csv": "54558f67024719d1e2c6d2a53bb9b690e25d56b5aa70537eac05ee5cd8ed25b1",
     "results/audits/mono_placeholder_records.csv": "358ea814ff18abd8f2237461f9b2c98363e0e0a6cb45d56213a570faeb62359c",
     "results/audits/mono_test_subset_paired_contrasts.csv": "6fb417d6fc84aa31d96d735c5e6e488086c11634e7a3d909d0031e088c70fd34",
     "results/audits/monomer_coverage.csv": "abc5ca9c93737ba87669db0f238662038c460bb09adce26858354ceb28edaceb",
     "results/audits/reviewer_audit_summary.csv": "f72ea6ba501c767ae4b1ad13042c1340397f9f753258cced12085bceecc05b48",
+    "results/common_no_mono_test/alignment_checks.csv": "a9d9e9a7dc66b592a1692fe807e5fb758d93d7fc22450ce9b16fbe38aa4e29ae",
+    "results/common_no_mono_test/metadata.json": "fad3826c2735d2432d73fce70df538201520ecacc11ed6e4d904c02fe0623f3d",
+    "results/common_no_mono_test/paired_contrasts.csv": "d99f955c8d01d45b6dae5d130301cbe49141c6e398b8d64504c25972b472312f",
+    "results/common_no_mono_test/seed_level_metrics.csv": "b55708e8d62cdc59cf7d9c41b388629806852c0b807b383e05c5fb2ddebfdc77",
+    "results/common_no_mono_test/summary.csv": "0d59f36c029e433465442c4702a78dd587f72c3b058b038662464a94cc8fe299",
     "results/estimator_matrix/rf_vs_xgb_paired.csv": "64f00f305625f1a1213acc4910cce148f89a5559220a6bb8d0e41e2ad21bea3f",
     "results/estimator_matrix/seed_level_results.csv": "23ae92ff4ad99959592deef96016c938eebcebc37862a5591e4a794e137dfb12",
     "results/estimator_matrix/summary_with_ci.csv": "8ce3c187044397bd108a0428f0f4cd10cc8ae8a452d278c9dc58e7847e75c207",
     "results/feature_to_block_mapping.json": "f94f1d5f275087208bcb1e91592f5da5401df9385422e762a4d578c12f90c29c",
+    "results/grouped_paired_bootstrap/bootstrap_replicates.csv": "f385a135b4677f31aa3d0701edb04903f546e71013cfbb52e52348ef71144e47",
+    "results/grouped_paired_bootstrap/metadata.json": "b6940b48fd74f0f55807687eafe6728939da2176c7b1e143c0fbf02946dc8dc8",
+    "results/grouped_paired_bootstrap/summary.csv": "051433319edaefd58c78e294ae6492a01c6f595cb1be149adc8ae024c4daba67",
     "results/key_results.json": "6c62d761661e6b9bc831d5030e3a921dab9bf47d77adef8e2ffa196086176bd9",
     "results/mono_exclusion_sensitivity/paired_contrasts.csv": "406e220b0607aa11406d609f251830664e0dc72d01537ac92b4f69e707119fc3",
     "results/mono_exclusion_sensitivity/seed_level_results.csv": "10ed8b0689873d58b9b422e17062898a58ef5816896ac65d8824ffe497fb14e7",
     "results/mono_exclusion_sensitivity/summary_with_ci.csv": "fb53d9eba71d8b44c6d27224b3deef2a976aadbdbf8850d3309d7b0bc9ef2b52",
     "results/paired_comparisons.csv": "884ade64c9f07cb04d48a40e49116b39bf602304f1bee53cc41feda57010cea6",
-    "results/scaffold_ranking/family_level_results.csv": "13651fe022d75a0743c58ba337b1dcaa2b7688b2968d44b4637617b840596da9",
-    "results/scaffold_ranking/summary_with_ci.csv": "e119e738f6b11b6e16fec6c4b1e8076d26d0f872ee554bb2b66c350b97a4d4a9",
+    "results/position_summary_ablation/metadata.json": "c77f0cd4d11c6c9dbd61acfea2b4dca99fbcde2cb0e5036c932ff913b349a0b2",
+    "results/position_summary_ablation/paired_contrasts.csv": "0cf4911cb2dbc2a5904175a765ee6c938b0f382f25587a6e44d1c8687c312b17",
+    "results/position_summary_ablation/seed_level_metrics.csv": "4005cdeb06631460a40bece2a0720cf16d2a5604af604654c84b1382392028f4",
+    "results/position_summary_ablation/summary.csv": "b44a52a162ce5050a3a029d5aa3a65f4396431236453b743688506076e5e4b9c",
+    "results/scaffold_ranking/family_level_results.csv": "6bf1659f10fd14110bbd7428a2c3e390cecfd885d091fdfb02261e99dcdf4e7f",
+    "results/scaffold_ranking/summary_with_ci.csv": "49bac7676ab1c5fa2894f68ea2585c09cb09986b1ef8b667f0d13adb34403c61",
     "results/secondary_incremental_analysis/analysis_metadata.json": "8aef7208bdbebe624cc72d8b31bf11849e8241980f6f5507f7de0f2f98861bcc",
     "results/secondary_incremental_analysis/cross_estimator_paired_effects.csv": "cee53337a302344406eb525dca290ab5693e8815e423029e9cf9750d2ab211db",
     "results/secondary_incremental_analysis/cross_estimator_paired_seed_differences.csv": "7ebe9503c2961d0d7c3dee6e3d26d3c54c8ad55bfc87be34922130a0b9396131",
@@ -31,7 +44,7 @@
     "results/time_forward/cutoff_statistics.csv": "e586cf1eff141a2b91b64a61d7b90dbe535861603f6ea450707ffd7c81423238",
     "results/time_forward/model_performance_with_ci.csv": "d881ae7efb0ffa46f57d113197dab3bb4e79d598beefd842607c1fc6fb63695e"
   },
-  "code_commit": null,
+  "code_commit": "e6a0009183a074f34c298502e2c904654f4c7363",
   "completion": {
     "estimator_matrix": {
       "completed": 1050,
@@ -40,6 +53,10 @@
     "mono_exclusion_sensitivity": {
       "completed": 180,
       "expected": 180
+    },
+    "position_summary_ablation": {
+      "completed": 30,
+      "expected": 30
     },
     "primary_benchmark": {
       "completed": 600,
@@ -54,6 +71,7 @@
   "dataset_checksum": "663c06cc870c65b3f88c27212e9736758c015cbecdaa21cb67ffb78f11d72355",
   "invalid_estimator_metrics": [],
   "invalid_mono_sensitivity_metrics": [],
+  "invalid_position_ablation_metrics": [],
   "invalid_primary_metrics": [],
   "missing_required_artifacts": [],
   "platform": "macOS-15.6-arm64-arm-64bit",
@@ -77,5 +95,5 @@
     "data/splits/CycPeptMPDB_PAMPA/sequence_cluster_no_mono/val.jsonl": "2df7e3b20822d66516817a5d003008313af2c9968d32223adecf216fe7268bd7"
   },
   "status": "COMPLETE",
-  "timestamp_utc": "2026-09-03T02:59:52.561300+00:00"
+  "timestamp_utc": "2026-09-05T12:30:58.946638+00:00"
 }
