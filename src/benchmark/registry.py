@@ -1,7 +1,7 @@
 """
 Unified model registry for CASPer benchmark.
 
-Defines the ten models in the final 30-seed primary benchmark with:
+Defines the primary benchmark models and targeted sensitivity models with:
 - model_id: short unique identifier (used in filenames)
 - model_name: human-readable name for tables
 - role: internal_baseline / primary_paper / ablation_control /
@@ -109,6 +109,21 @@ MODEL_REGISTRY: Dict[str, ModelSpec] = {
                 "chemistry-plus-site model — primary anchor-aware comparison",
         featurizer="anchor_aware",
         featurizer_kwargs={"descriptor_set": "basic", "ablation_mode": "chemistry_anchors"},
+        estimator_type="xgboost",
+    ),
+
+    "chem_site_no_position_summary_xgb": ModelSpec(
+        model_id="chem_site_no_position_summary_xgb",
+        model_name="Chem+Site without position summaries + XGBoost",
+        role="ablation_control",
+        purpose="Position-summary sensitivity: Chemistry plus Site after removing "
+                "normalized-position mean, standard deviation, and range while "
+                "retaining anchor counts/density, anchor-residue, and terminal features",
+        featurizer="anchor_aware",
+        featurizer_kwargs={
+            "descriptor_set": "basic",
+            "ablation_mode": "chemistry_anchors_no_position_summary",
+        },
         estimator_type="xgboost",
     ),
 

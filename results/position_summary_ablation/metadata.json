@@ -1,0 +1,17 @@
+{
+  "analysis_type": "position-summary ablation",
+  "removed_features": [
+    "anchor_pos_mean",
+    "anchor_pos_std",
+    "anchor_pos_range"
+  ],
+  "retained_site_features": [
+    "anchor counts",
+    "anchor density",
+    "anchor-residue identities",
+    "anchor-residue property classes",
+    "terminal-edit annotations"
+  ],
+  "split": "fixed random",
+  "optimization": "30 matched seeds and 50 Optuna trials selected by validation RMSE"
+}

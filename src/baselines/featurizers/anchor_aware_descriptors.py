@@ -108,12 +108,14 @@ class AnchorAwareDescriptorFeaturizer:
         Initialize anchor-aware descriptor featurizer.
 
         Args:
-            descriptor_set: The final study uses the basic descriptor set.
+            descriptor_set: The study uses the basic descriptor set.
             ablation_mode: Feature groups to include:
                 - "full": All features (A + B + C)
                 - "chemistry_only": Global chemistry only (A)
                 - "chemistry_attachment": A + C (attachment features)
                 - "chemistry_anchors": A + B (all anchor features)
+                - "chemistry_anchors_no_position_summary": A + B with the
+                  normalized-position mean, standard deviation, and range removed
                 - "site_context_only": B + C
         """
         self.descriptor_set = descriptor_set
@@ -399,6 +401,12 @@ class AnchorAwareDescriptorFeaturizer:
             features.extend(self._last_b1)
             features.extend(self._last_b2)
             features.extend(self._last_b3)
+        elif self.ablation_mode == "chemistry_anchors_no_position_summary":
+            # A + anchor counts/density + B2 + B3. The three summaries that
+            # depend directly on the recorded cyclic sequence origin are omitted.
+            features.extend(self._last_b1[:3])
+            features.extend(self._last_b2)
+            features.extend(self._last_b3)
         elif self.ablation_mode == "site_context_only":
             # B + C only (no chemistry A), for BC model
             # Strip the A features already added at start
@@ -460,6 +468,7 @@ class AnchorAwareDescriptorFeaturizer:
             'chemistry_only': a,
             'chemistry_attachment': a + c,
             'chemistry_anchors': a + b1 + b2 + b3,
+            'chemistry_anchors_no_position_summary': a + b1[:3] + b2 + b3,
             'site_context_only': b1 + b2 + b3 + c,
         }
         if self.ablation_mode not in mode_names:

@@ -1,0 +1,445 @@
+system,feature,n_values,n_nan,n_positive_infinity,n_negative_infinity,n_nonfinite
+Chemistry (A),mol_weight,7224,0,0,0,0
+Chemistry (A),logp,7224,0,0,0,0
+Chemistry (A),tpsa,7224,0,0,0,0
+Chemistry (A),num_h_acceptors,7224,0,0,0,0
+Chemistry (A),num_h_donors,7224,0,0,0,0
+Chemistry (A),num_rotatable_bonds,7224,0,0,0,0
+Chemistry (A),num_aromatic_rings,7224,0,0,0,0
+Chemistry (A),num_aliphatic_rings,7224,0,0,0,0
+Chemistry (A),num_edits,7224,0,0,0,0
+Chemistry (A),num_edit_families,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_MaxAbsEStateIndex,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_MaxEStateIndex,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_MinAbsEStateIndex,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_MinEStateIndex,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_qed,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SPS,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_MolWt,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_HeavyAtomMolWt,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_ExactMolWt,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumValenceElectrons,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumRadicalElectrons,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_MaxPartialCharge,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_MinPartialCharge,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_MaxAbsPartialCharge,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_MinAbsPartialCharge,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_FpDensityMorgan1,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_FpDensityMorgan2,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_FpDensityMorgan3,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_BCUT2D_MWHI,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_BCUT2D_MWLOW,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_BCUT2D_CHGHI,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_BCUT2D_CHGLO,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_BCUT2D_LOGPHI,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_BCUT2D_LOGPLOW,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_BCUT2D_MRHI,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_BCUT2D_MRLOW,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_AvgIpc,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_BalabanJ,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_BertzCT,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Chi0,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Chi0n,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Chi0v,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Chi1,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Chi1n,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Chi1v,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Chi2n,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Chi2v,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Chi3n,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Chi3v,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Chi4n,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Chi4v,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_HallKierAlpha,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Ipc,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Kappa1,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Kappa2,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Kappa3,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_LabuteASA,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_PEOE_VSA1,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_PEOE_VSA10,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_PEOE_VSA11,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_PEOE_VSA12,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_PEOE_VSA13,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_PEOE_VSA14,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_PEOE_VSA2,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_PEOE_VSA3,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_PEOE_VSA4,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_PEOE_VSA5,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_PEOE_VSA6,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_PEOE_VSA7,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_PEOE_VSA8,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_PEOE_VSA9,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SMR_VSA1,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SMR_VSA10,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SMR_VSA2,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SMR_VSA3,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SMR_VSA4,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SMR_VSA5,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SMR_VSA6,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SMR_VSA7,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SMR_VSA8,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SMR_VSA9,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SlogP_VSA1,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SlogP_VSA10,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SlogP_VSA11,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SlogP_VSA12,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SlogP_VSA2,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SlogP_VSA3,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SlogP_VSA4,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SlogP_VSA5,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SlogP_VSA6,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SlogP_VSA7,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SlogP_VSA8,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_SlogP_VSA9,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_TPSA,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_EState_VSA1,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_EState_VSA10,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_EState_VSA11,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_EState_VSA2,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_EState_VSA3,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_EState_VSA4,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_EState_VSA5,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_EState_VSA6,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_EState_VSA7,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_EState_VSA8,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_EState_VSA9,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_VSA_EState1,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_VSA_EState10,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_VSA_EState2,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_VSA_EState3,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_VSA_EState4,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_VSA_EState5,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_VSA_EState6,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_VSA_EState7,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_VSA_EState8,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_VSA_EState9,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_FractionCSP3,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_HeavyAtomCount,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NHOHCount,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NOCount,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumAliphaticCarbocycles,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumAliphaticHeterocycles,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumAliphaticRings,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumAmideBonds,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumAromaticCarbocycles,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumAromaticHeterocycles,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumAromaticRings,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumAtomStereoCenters,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumBridgeheadAtoms,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumHAcceptors,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumHDonors,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumHeteroatoms,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumHeterocycles,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumRotatableBonds,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumSaturatedCarbocycles,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumSaturatedHeterocycles,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumSaturatedRings,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumSpiroAtoms,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_NumUnspecifiedAtomStereoCenters,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_Phi,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_RingCount,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_MolLogP,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_MolMR,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_Al_COO,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_Al_OH,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_Al_OH_noTert,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_ArN,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_Ar_COO,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_Ar_N,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_Ar_NH,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_Ar_OH,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_COO,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_COO2,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_C_O,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_C_O_noCOO,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_C_S,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_HOCCN,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_Imine,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_NH0,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_NH1,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_NH2,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_N_O,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_Ndealkylation1,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_Ndealkylation2,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_Nhpyrrole,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_SH,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_aldehyde,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_alkyl_carbamate,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_alkyl_halide,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_allylic_oxid,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_amide,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_amidine,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_aniline,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_aryl_methyl,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_azide,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_azo,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_barbitur,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_benzene,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_benzodiazepine,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_bicyclic,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_diazo,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_dihydropyridine,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_epoxide,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_ester,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_ether,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_furan,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_guanido,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_halogen,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_hdrzine,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_hdrzone,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_imidazole,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_imide,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_isocyan,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_isothiocyan,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_ketone,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_ketone_Topliss,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_lactam,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_lactone,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_methoxy,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_morpholine,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_nitrile,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_nitro,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_nitro_arom,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_nitro_arom_nonortho,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_nitroso,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_oxazole,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_oxime,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_para_hydroxylation,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_phenol,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_phenol_noOrthoHbond,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_phos_acid,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_phos_ester,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_piperdine,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_piperzine,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_priamide,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_prisulfonamd,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_pyridine,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_quatN,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_sulfide,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_sulfonamd,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_sulfone,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_term_acetylene,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_tetrazole,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_thiazole,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_thiocyan,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_thiophene,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_unbrch_alkane,7224,0,0,0,0
+RDKit 2D before imputation,rdkit_fr_urea,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_MaxAbsEStateIndex,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_MaxEStateIndex,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_MinAbsEStateIndex,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_MinEStateIndex,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_qed,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SPS,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_MolWt,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_HeavyAtomMolWt,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_ExactMolWt,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumValenceElectrons,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumRadicalElectrons,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_MaxPartialCharge,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_MinPartialCharge,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_MaxAbsPartialCharge,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_MinAbsPartialCharge,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_FpDensityMorgan1,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_FpDensityMorgan2,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_FpDensityMorgan3,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_BCUT2D_MWHI,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_BCUT2D_MWLOW,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_BCUT2D_CHGHI,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_BCUT2D_CHGLO,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_BCUT2D_LOGPHI,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_BCUT2D_LOGPLOW,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_BCUT2D_MRHI,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_BCUT2D_MRLOW,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_AvgIpc,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_BalabanJ,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_BertzCT,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Chi0,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Chi0n,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Chi0v,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Chi1,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Chi1n,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Chi1v,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Chi2n,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Chi2v,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Chi3n,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Chi3v,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Chi4n,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Chi4v,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_HallKierAlpha,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Ipc,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Kappa1,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Kappa2,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Kappa3,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_LabuteASA,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_PEOE_VSA1,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_PEOE_VSA10,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_PEOE_VSA11,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_PEOE_VSA12,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_PEOE_VSA13,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_PEOE_VSA14,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_PEOE_VSA2,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_PEOE_VSA3,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_PEOE_VSA4,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_PEOE_VSA5,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_PEOE_VSA6,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_PEOE_VSA7,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_PEOE_VSA8,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_PEOE_VSA9,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SMR_VSA1,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SMR_VSA10,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SMR_VSA2,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SMR_VSA3,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SMR_VSA4,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SMR_VSA5,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SMR_VSA6,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SMR_VSA7,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SMR_VSA8,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SMR_VSA9,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SlogP_VSA1,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SlogP_VSA10,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SlogP_VSA11,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SlogP_VSA12,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SlogP_VSA2,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SlogP_VSA3,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SlogP_VSA4,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SlogP_VSA5,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SlogP_VSA6,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SlogP_VSA7,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SlogP_VSA8,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_SlogP_VSA9,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_TPSA,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_EState_VSA1,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_EState_VSA10,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_EState_VSA11,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_EState_VSA2,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_EState_VSA3,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_EState_VSA4,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_EState_VSA5,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_EState_VSA6,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_EState_VSA7,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_EState_VSA8,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_EState_VSA9,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_VSA_EState1,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_VSA_EState10,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_VSA_EState2,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_VSA_EState3,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_VSA_EState4,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_VSA_EState5,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_VSA_EState6,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_VSA_EState7,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_VSA_EState8,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_VSA_EState9,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_FractionCSP3,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_HeavyAtomCount,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NHOHCount,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NOCount,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumAliphaticCarbocycles,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumAliphaticHeterocycles,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumAliphaticRings,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumAmideBonds,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumAromaticCarbocycles,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumAromaticHeterocycles,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumAromaticRings,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumAtomStereoCenters,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumBridgeheadAtoms,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumHAcceptors,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumHDonors,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumHeteroatoms,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumHeterocycles,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumRotatableBonds,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumSaturatedCarbocycles,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumSaturatedHeterocycles,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumSaturatedRings,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumSpiroAtoms,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_NumUnspecifiedAtomStereoCenters,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_Phi,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_RingCount,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_MolLogP,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_MolMR,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_Al_COO,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_Al_OH,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_Al_OH_noTert,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_ArN,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_Ar_COO,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_Ar_N,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_Ar_NH,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_Ar_OH,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_COO,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_COO2,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_C_O,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_C_O_noCOO,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_C_S,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_HOCCN,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_Imine,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_NH0,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_NH1,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_NH2,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_N_O,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_Ndealkylation1,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_Ndealkylation2,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_Nhpyrrole,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_SH,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_aldehyde,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_alkyl_carbamate,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_alkyl_halide,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_allylic_oxid,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_amide,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_amidine,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_aniline,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_aryl_methyl,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_azide,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_azo,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_barbitur,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_benzene,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_benzodiazepine,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_bicyclic,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_diazo,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_dihydropyridine,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_epoxide,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_ester,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_ether,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_furan,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_guanido,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_halogen,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_hdrzine,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_hdrzone,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_imidazole,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_imide,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_isocyan,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_isothiocyan,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_ketone,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_ketone_Topliss,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_lactam,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_lactone,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_methoxy,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_morpholine,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_nitrile,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_nitro,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_nitro_arom,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_nitro_arom_nonortho,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_nitroso,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_oxazole,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_oxime,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_para_hydroxylation,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_phenol,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_phenol_noOrthoHbond,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_phos_acid,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_phos_ester,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_piperdine,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_piperzine,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_priamide,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_prisulfonamd,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_pyridine,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_quatN,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_sulfide,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_sulfonamd,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_sulfone,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_term_acetylene,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_tetrazole,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_thiazole,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_thiocyan,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_thiophene,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_unbrch_alkane,7224,0,0,0,0
+RDKit 2D after train-fitted median imputation,rdkit_fr_urea,7224,0,0,0,0

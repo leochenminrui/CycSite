@@ -7,7 +7,7 @@ Permeability Modeling**.
 
 | Path | Purpose |
 |---|---|
-| `data/raw/` | Original CycPeptMPDB source CSV files used by the study |
+| `data/raw/` | CycPeptMPDB source CSV files used by the study; reuse remains subject to the source database terms |
 | `data/processed/` | Normalized dataset containing 7,224 records |
 | `data/splits/` | Fixed random, strict sequence-component, and Mono-exclusion splits |
 | `src/` | Dataset schema, descriptor construction, model tuning, and evaluation code |
@@ -58,6 +58,13 @@ CASPER_MODEL_THREADS=2 .venv/bin/python scripts/run_scaffold_ranking.py
 .venv/bin/python scripts/finalize_scaffold_statistics.py
 ```
 
+Run the limited position-summary ablation (full training run):
+
+```bash
+CASPER_WORKERS=8 .venv/bin/python scripts/run_position_summary_ablation.py
+.venv/bin/python scripts/summarize_position_summary_ablation.py
+```
+
 Aggregate the statistics and explanations:
 
 ```bash
@@ -68,6 +75,21 @@ Aggregate the statistics and explanations:
 .venv/bin/python scripts/summarize_results.py
 .venv/bin/python scripts/verify_results.py
 ```
+
+The following commands rebuild the new statistics from the published
+predictions or completed run metrics; they do not retrain the benchmark:
+
+```bash
+.venv/bin/python scripts/compute_grouped_paired_bootstrap.py
+.venv/bin/python scripts/compute_common_no_mono_test_comparison.py
+.venv/bin/python scripts/summarize_position_summary_ablation.py
+.venv/bin/python scripts/finalize_scaffold_statistics.py
+.venv/bin/python scripts/verify_results.py
+```
+
+`scripts/audit_descriptor_finiteness.py` independently recalculates the
+Chemistry and RDKit 2D descriptors for the 7,224 retained records and records
+the before/after-imputation finiteness counts.
 
 Generate the figures from the result tables and predictions with:
 
@@ -80,6 +102,9 @@ Generate the figures from the result tables and predictions with:
 - Primary descriptor and baseline benchmark: 600 runs
 - Estimator-by-representation matrix: 1,050 runs
 - Mono-placeholder exclusion sensitivity: 180 runs
+- Position-summary ablation: 30 runs
+- Exact-sequence grouped paired bootstrap: 5,000 replicates per split
+- Common no-Mono held-out comparison: 30 matched seeds per training scheme
 - TreeSHAP interpretation: 30 independently optimized seeds
 - Time-forward evaluation: 8 cutoff years
 - Scaffold-family ranking: 49 families

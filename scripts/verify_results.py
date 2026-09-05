@@ -15,6 +15,7 @@ RESULTS = ROOT / "results"
 PRIMARY_RAW = RESULTS / "raw_runs"
 ESTIMATOR_RAW = RESULTS / "estimator_matrix/raw_runs"
 MONO_SENSITIVITY_RAW = RESULTS / "mono_exclusion_sensitivity/raw_runs"
+POSITION_ABLATION_RAW = RESULTS / "position_summary_ablation/raw_runs"
 
 
 def sha256(path):
@@ -60,6 +61,9 @@ def main():
     mono_sensitivity_count, mono_sensitivity_invalid = completed_metrics(
         MONO_SENSITIVITY_RAW, expected_trials=50, field="n_optuna_trials"
     )
+    position_ablation_count, position_ablation_invalid = completed_metrics(
+        POSITION_ABLATION_RAW, expected_trials=50, field="n_optuna_trials"
+    )
     shap_seed_rows = len(pd.read_csv(RESULTS / "shap/seed_level_group_attribution.csv"))
     time_cutoffs = pd.read_csv(RESULTS / "time_forward/cutoff_statistics.csv").cutoff.nunique()
     scaffold_families = pd.read_csv(
@@ -102,6 +106,19 @@ def main():
         RESULTS / "mono_exclusion_sensitivity/seed_level_results.csv",
         RESULTS / "mono_exclusion_sensitivity/summary_with_ci.csv",
         RESULTS / "mono_exclusion_sensitivity/paired_contrasts.csv",
+        RESULTS / "grouped_paired_bootstrap/bootstrap_replicates.csv",
+        RESULTS / "grouped_paired_bootstrap/summary.csv",
+        RESULTS / "grouped_paired_bootstrap/metadata.json",
+        RESULTS / "common_no_mono_test/alignment_checks.csv",
+        RESULTS / "common_no_mono_test/seed_level_metrics.csv",
+        RESULTS / "common_no_mono_test/summary.csv",
+        RESULTS / "common_no_mono_test/paired_contrasts.csv",
+        RESULTS / "common_no_mono_test/metadata.json",
+        RESULTS / "position_summary_ablation/seed_level_metrics.csv",
+        RESULTS / "position_summary_ablation/summary.csv",
+        RESULTS / "position_summary_ablation/paired_contrasts.csv",
+        RESULTS / "position_summary_ablation/metadata.json",
+        RESULTS / "audits/descriptor_finiteness.csv",
         ROOT / "data/splits/CycPeptMPDB_PAMPA/sequence_cluster/metadata.json",
     ]
     missing = [str(path.relative_to(ROOT)) for path in required if not path.exists()]
@@ -109,6 +126,7 @@ def main():
         primary_count == 600
         and estimator_count == 1050
         and mono_sensitivity_count == 180
+        and position_ablation_count == 30
         and shap_seed_rows == 720
         and time_cutoffs == 8
         and scaffold_families == 49
@@ -117,6 +135,7 @@ def main():
         and not primary_invalid
         and not estimator_invalid
         and not mono_sensitivity_invalid
+        and not position_ablation_invalid
         and not missing
     )
     manifest = {
@@ -143,6 +162,10 @@ def main():
                 "completed": mono_sensitivity_count,
                 "expected": 180,
             },
+            "position_summary_ablation": {
+                "completed": position_ablation_count,
+                "expected": 30,
+            },
             "shap_seed_group_rows": shap_seed_rows,
             "time_forward_cutoffs": time_cutoffs,
             "scaffold_families": scaffold_families,
@@ -152,6 +175,7 @@ def main():
         "invalid_primary_metrics": primary_invalid,
         "invalid_estimator_metrics": estimator_invalid,
         "invalid_mono_sensitivity_metrics": mono_sensitivity_invalid,
+        "invalid_position_ablation_metrics": position_ablation_invalid,
         "missing_required_artifacts": missing,
         "artifact_checksums": {
             str(path.relative_to(ROOT)): sha256(path)
@@ -167,6 +191,7 @@ def main():
 - Primary benchmark: {primary_count}/600 runs
 - Estimator matrix: {estimator_count}/1050 runs
 - Mono-placeholder exclusion sensitivity: {mono_sensitivity_count}/180 runs
+- Position-summary ablation: {position_ablation_count}/30 runs
 - SHAP: 30 optimization seeds
 - Time-forward: {time_cutoffs}/8 cutoffs
 - Scaffold ranking: {scaffold_families}/49 families

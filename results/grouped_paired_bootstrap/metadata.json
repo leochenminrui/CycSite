@@ -1,0 +1,12 @@
+{
+  "analysis_type": "fixed-model held-out test-composition sensitivity",
+  "comparison": "A+B minus A",
+  "trained_models": "30 matched XGBoost optimization seeds per representation",
+  "bootstrap_unit": "exact peptide sequence",
+  "shared_resampling": "Within each replicate, identical sampled record indices are used for A, A+B, and all 30 matched seeds.",
+  "limitations": [
+    "Training and validation data are fixed and are not resampled.",
+    "The analysis does not remove related derivatives from the original random split.",
+    "The analysis is not an external validation or an uncertainty estimate for retraining on a new dataset."
+  ]
+}

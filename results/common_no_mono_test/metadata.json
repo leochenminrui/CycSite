@@ -1,0 +1,9 @@
+{
+  "analysis_type": "common held-out no-Mono test comparison",
+  "test_definition": "records in the full fixed test partition that contain no raw token beginning with Mono",
+  "training_schemes": [
+    "models optimized on the full retained train/validation partitions",
+    "models independently optimized after Mono-placeholder records were removed from train/validation partitions"
+  ],
+  "limitations": "Using an identical test set removes test-composition differences, but the training and validation samples and the resulting hyperparameter optimization still differ between schemes."
+}

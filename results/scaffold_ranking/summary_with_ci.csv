@@ -1,6 +1,6 @@
-model,n_families_total,n_families_with_valid_pairs,overall_pairwise_accuracy,mean_family_pairwise_accuracy,family_bootstrap_ci95_low,family_bootstrap_ci95_high,bootstrap_replicates,bootstrap_unit,interval
-Chemistry,49,48,0.679587029605025,0.6394603771343784,0.5954281757234876,0.6808684776521238,5000,peptide family,percentile
-Chemistry + Site,49,48,0.6803666647900464,0.6430703334527971,0.5943572521875904,0.683516141280477,5000,peptide family,percentile
-Chemistry + Site + Context,49,48,0.6798695279763868,0.6272782469483557,0.5801788426717438,0.6698723624659129,5000,peptide family,percentile
-ECFP,49,48,0.681770108656313,0.5740370343373207,0.5273784759116885,0.6159592171723094,5000,peptide family,percentile
-Sequence,49,48,0.5640758583527027,0.5951677981197842,0.5491545874583664,0.6396296531953558,5000,peptide family,percentile
+model,n_families_total,n_families_with_valid_pairs,overall_pairwise_accuracy,mean_family_pairwise_accuracy,family_bootstrap_ci95_low,family_bootstrap_ci95_high,bootstrap_replicates,bootstrap_unit,interval,prediction_tie_score
+Chemistry,49,48,0.6784592981172137,0.6349009822771399,0.5906531425327093,0.6755603919612068,5000,peptide family,percentile,0.5
+Chemistry + Site,49,48,0.6803078528515245,0.6423558891128536,0.5935802682497215,0.6827429801302046,5000,peptide family,percentile,0.5
+Chemistry + Site + Context,49,48,0.6798124753693591,0.6268411143379932,0.5803517504745304,0.669220166359967,5000,peptide family,percentile,0.5
+ECFP,49,48,0.6822418608298415,0.5736506865058802,0.5354062762602401,0.6081734026710768,5000,peptide family,percentile,0.5
+Sequence,49,48,0.5619945691950103,0.5854231410682947,0.5514496188696635,0.619797247132234,5000,peptide family,percentile,0.5

@@ -1,0 +1,7 @@
+split,comparison,metric,observed_mean_across_30_matched_seeds,grouped_bootstrap_ci95_low,grouped_bootstrap_ci95_high,n_test_records,n_sequence_groups,bootstrap_replicates_requested,bootstrap_replicates_valid,bootstrap_replicates_invalid_zero_variance,bootstrap_seed,bootstrap_unit,interval
+random,A+B minus A,r2,0.01766951042887981,-0.04329503683566736,0.07857579037691624,1084,308,5000,5000,0,20260905,exact peptide sequence,percentile
+random,A+B minus A,rmse,-0.01360205473494076,-0.06284873704162312,0.03173438287726733,1084,308,5000,5000,0,20260905,exact peptide sequence,percentile
+random,A+B minus A,mae,-0.009156790141975764,-0.038808569350564766,0.01794179362022905,1084,308,5000,5000,0,20260905,exact peptide sequence,percentile
+sequence_cluster,A+B minus A,r2,0.05729059937081649,-0.07373415702997932,0.21651506444077578,97,60,5000,5000,0,20260906,exact peptide sequence,percentile
+sequence_cluster,A+B minus A,rmse,-0.04561563846764772,-0.15240545619604462,0.06845573912447535,97,60,5000,5000,0,20260906,exact peptide sequence,percentile
+sequence_cluster,A+B minus A,mae,-0.0547201535595241,-0.13919619499961003,0.04036966984991573,97,60,5000,5000,0,20260906,exact peptide sequence,percentile

@@ -26,11 +26,14 @@ def family_job(args):
  fid,members,allr=args;members=sorted(members,key=lambda r:num(r['name']));n=max(3,int(.3*len(members)));support=members[:n];test=members[n:];ids={r['id'] for r in members};hist=[r for r in allr if r['id'] not in ids];rows=[];pred=[]
  for mn,(fk,kw) in MODELS.items():
   f=FEATURIZER_REGISTRY[fk](**kw);train=hist+support;ts=[r['sample'] for r in train];es=[r['sample'] for r in test];f.fit(ts);X=np.nan_to_num(f.transform(ts));Xt=np.nan_to_num(f.transform(es));y=np.array([r['label'] for r in train]);yt=np.array([r['label'] for r in test]);m=XGBRegressor(n_estimators=100,max_depth=5,learning_rate=.1,subsample=.8,colsample_bytree=.8,tree_method='hist',verbosity=0,n_jobs=THREADS,random_state=42);m.fit(X,y,verbose=False);pr=m.predict(Xt);correct=valid=0
+  predicted_ties=label_ties=0;score=0.0
   for i in range(len(yt)):
    for j in range(i+1,len(yt)):
-    if yt[i]==yt[j]:continue
-    valid+=1;correct+=((yt[i]>yt[j])==(pr[i]>pr[j]))
-  rows.append({'family_id':fid,'source':members[0]['source'],'model':mn,'n_historical':len(hist),'n_support':len(support),'n_test':len(test),'valid_pair_count':valid,'correct_pair_count':correct,'pairwise_accuracy':correct/valid if valid else np.nan,'within_family_spearman':spearmanr(yt,pr).statistic})
+    if yt[i]==yt[j]:label_ties+=1;continue
+    valid+=1
+    if pr[i]==pr[j]:predicted_ties+=1;score+=0.5
+    elif ((yt[i]>yt[j])==(pr[i]>pr[j])):correct+=1;score+=1.0
+  rows.append({'family_id':fid,'source':members[0]['source'],'model':mn,'n_historical':len(hist),'n_support':len(support),'n_test':len(test),'valid_pair_count':valid,'correct_pair_count':score,'strictly_concordant_pair_count':correct,'predicted_tie_count':predicted_ties,'label_tie_count':label_ties,'pairwise_accuracy':score/valid if valid else np.nan,'within_family_spearman':spearmanr(yt,pr).statistic})
   pred += [{'family_id':fid,'model':mn,'sample_id':r['id'],'y_true':a,'y_pred':float(b)} for r,a,b in zip(test,yt,pr)]
  return rows,pred
 def main():
