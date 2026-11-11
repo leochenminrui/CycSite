@@ -1,111 +1,134 @@
 # CycSite
 
-Code and data for **Site-Conditioned Edit Chemistry for Cyclic Peptide
-Permeability Modeling**.
+**Site-conditioned chemical edits for cyclic-peptide permeability modeling.**
 
-## Contents
+CycSite studies how much the location of a chemical edit adds to the prediction
+of cyclic-peptide passive membrane permeability. It separates whole-molecule
+chemistry, edit-site descriptors, and multi-edit context in an interpretable
+descriptor framework. Use it to construct site-aware features, compare molecular
+representations on fixed PAMPA partitions, and examine how the conclusions change
+under sequence, temporal, and peptide-family shifts.
 
-| Path | Purpose |
-|---|---|
-| `data/raw/` | CycPeptMPDB source CSV files used by the study; reuse remains subject to the source database terms |
-| `data/processed/` | Normalized dataset containing 7,224 records |
-| `data/splits/` | Fixed random, strict sequence-component, and Mono-exclusion splits |
-| `src/` | Dataset schema, descriptor construction, model tuning, and evaluation code |
-| `scripts/` | Data audit, experiments, statistics, SHAP, temporal, scaffold, and figure workflows |
-| `results/` | Run records, predictions, statistics, audits, and machine-readable summaries |
+The accompanying paper, **Site-Conditioned Edit Chemistry for Cyclic Peptide
+Permeability Modeling**, is accepted in *Journal of Cheminformatics*.
+[Read the preprint](https://doi.org/10.21203/rs.3.rs-9541490/v1) ·
+[Reproduction guide](docs/reproduction.md) · [Data and terms](docs/data.md) ·
+[Citation](#citation)
 
-The compact result summary is
-`results/summary.json`. The checksum-backed
-result manifest is `results/RESULTS_MANIFEST.json`.
+## Method and archived results
 
-## Environment
+The curated dataset contains **7,224 known-site PAMPA records**. Chemistry features
+(A) describe molecular properties and edit counts; site features (B) describe
+anchor positions and residues; context features (C) describe edit types,
+attachments, and their combinations. Fixed splits, per-seed predictions,
+hyperparameter trials, and uncertainty summaries accompany the code.
 
-The verified environment uses Python 3.12:
+The archived 30-seed primary XGBoost benchmark gives the following mean test
+R² values:
+
+| Representation | Random split | Strict sequence-component split |
+|---|---:|---:|
+| Chemistry (A) | 0.427 | 0.074 |
+| Chemistry + Site (A+B) | 0.444 | 0.131 |
+| Chemistry + Site + Context (A+B+C) | 0.453 | 0.143 |
+
+These results show a modest site-aware improvement within the random-split
+setting and substantially lower performance under sequence shift. The strict
+component split keeps related sequences together and has a small held-out set
+(97 test records). Values above summarize the current repository's 30-seed
+archive; the linked preprint v1 describes an earlier analysis version. See
+[the reproduction guide](docs/reproduction.md#reference-results) for intervals,
+split definitions, and the exact archived source revision.
+
+## Quick start
+
+Python 3.12 is the recorded research environment. Run these commands from the
+repository root:
 
 ```bash
+git clone https://github.com/leochenminrui/CycSite.git
+cd CycSite
 python3.12 -m venv .venv
-.venv/bin/python -m pip install --upgrade pip
 .venv/bin/python -m pip install -r requirements.txt
 ```
 
-Run commands from the repository root.
-
-## Reproduce the analyses
-
-Rebuild and audit the fixed data partitions:
+Construct the full 73-feature representation for the first supplied peptide:
 
 ```bash
-.venv/bin/python scripts/audit_dataset.py
-.venv/bin/python scripts/create_sequence_cluster_split.py
-.venv/bin/python scripts/create_mono_exclusion_splits.py
+PYTHONPATH=src .venv/bin/python - <<'PY'
+from pathlib import Path
+from data.pem_schema import PEMSample
+from baselines.featurizers.anchor_aware_descriptors import AnchorAwareDescriptorFeaturizer
+
+with Path("data/processed/pem_schema/cycpeptmpdb_pampa.jsonl").open() as stream:
+    sample = PEMSample.model_validate_json(next(stream))
+featurizer = AnchorAwareDescriptorFeaturizer(ablation_mode="full")
+features = featurizer.featurize([sample])
+print(sample.sample_id, features.shape)
+PY
 ```
 
-Run the 30-seed primary benchmark and estimator matrix:
+Expected output: `CYCPEPTMPDB_PAMPA_000000 (1, 73)`.
+The input contains the peptide sequence, molecular SMILES, and resolved edit
+anchors. The output is a descriptor matrix; model fitting and evaluation commands
+are in the [reproduction guide](docs/reproduction.md).
+
+## Reproducibility resources
+
+Check the archived dataset, split, and summary checksums without installing the
+scientific dependencies:
 
 ```bash
-CASPER_WORKERS=8 .venv/bin/python scripts/run_primary_benchmark.py
-CASPER_ESTIMATOR_WORKERS=8 CASPER_ESTIMATOR_THREADS=2 \
-  .venv/bin/python scripts/run_estimator_matrix.py
+python3 scripts/check_release.py
 ```
 
-Run the sensitivity and transfer analyses:
+The [reproduction guide](docs/reproduction.md) covers saved-result checks, dataset
+audits, model training, sensitivity analyses, and figure generation. CPU-based
+training is supported; the default primary benchmark runs up to eight workers,
+with two XGBoost threads per fit. Full tuning comprises thousands of fits and is
+separate from the quick start. The guide also records a
+[version difference in the compact scaffold summary](docs/reproduction.md#compact-summary-consistency).
 
-```bash
-CASPER_WORKERS=8 .venv/bin/python scripts/run_mono_exclusion_sensitivity.py
-CASPER_MODEL_THREADS=2 .venv/bin/python scripts/run_time_forward.py
-.venv/bin/python scripts/finalize_time_forward_statistics.py
-CASPER_MODEL_THREADS=2 .venv/bin/python scripts/run_scaffold_ranking.py
-.venv/bin/python scripts/finalize_scaffold_statistics.py
+| Path | Contents |
+|---|---|
+| `src/` | Dataset schema, descriptor construction, tuning, and evaluation |
+| `scripts/` | Executable data, benchmark, statistics, and figure workflows |
+| `configs/benchmark/benchmark.yaml` | Primary benchmark and search settings |
+| `data/` | Source CSVs, normalized records, and fixed partitions |
+| `results/` | Saved predictions, trials, estimates, uncertainty, and manifests |
+| `docs/` | Reproduction instructions and data provenance |
+
+## Citation
+
+If you use CycSite's method, code, or results, please cite the accompanying paper:
+
+> Chen, M., Zou, G., Chen, M., Song, B., and Saigo, H. (2026).
+> *Site-Conditioned Edit Chemistry for Cyclic Peptide Permeability Modeling*.
+> Research Square, preprint v1. https://doi.org/10.21203/rs.3.rs-9541490/v1.
+> Accepted in *Journal of Cheminformatics*.
+
+The DOI currently provided here identifies the preprint. Cite the journal version
+when its publication metadata become available. For computational reproducibility,
+also report the repository commit used (`git rev-parse HEAD`).
+
+```bibtex
+@misc{chen2026cycsite,
+  author = {Chen, Minrui and Zou, Guanjie and Chen, Minqi and Song, Bowen and Saigo, Hiroto},
+  title = {Site-Conditioned Edit Chemistry for Cyclic Peptide Permeability Modeling},
+  year = {2026},
+  publisher = {Research Square},
+  doi = {10.21203/rs.3.rs-9541490/v1},
+  url = {https://doi.org/10.21203/rs.3.rs-9541490/v1},
+  note = {Preprint v1. Accepted in Journal of Cheminformatics}
+}
 ```
 
-Run the limited position-summary ablation (full training run):
+[CITATION.cff](CITATION.cff) provides machine-readable paper metadata for GitHub's
+**Cite this repository** menu. If you use the supplied CycPeptMPDB records, also
+cite the [source database paper](https://doi.org/10.1021/acs.jcim.2c01573).
 
-```bash
-CASPER_WORKERS=8 .venv/bin/python scripts/run_position_summary_ablation.py
-.venv/bin/python scripts/summarize_position_summary_ablation.py
-```
+## License
 
-Aggregate the statistics and explanations:
-
-```bash
-.venv/bin/python scripts/compute_statistics.py
-.venv/bin/python scripts/compute_mono_test_sensitivity.py
-.venv/bin/python scripts/run_shap.py
-.venv/bin/python scripts/compute_secondary_incremental_analysis.py
-.venv/bin/python scripts/summarize_results.py
-.venv/bin/python scripts/verify_results.py
-```
-
-The following commands rebuild the new statistics from the published
-predictions or completed run metrics; they do not retrain the benchmark:
-
-```bash
-.venv/bin/python scripts/compute_grouped_paired_bootstrap.py
-.venv/bin/python scripts/compute_common_no_mono_test_comparison.py
-.venv/bin/python scripts/summarize_position_summary_ablation.py
-.venv/bin/python scripts/finalize_scaffold_statistics.py
-.venv/bin/python scripts/verify_results.py
-```
-
-`scripts/audit_descriptor_finiteness.py` independently recalculates the
-Chemistry and RDKit 2D descriptors for the 7,224 retained records and records
-the before/after-imputation finiteness counts.
-
-Generate the figures from the result tables and predictions with:
-
-```bash
-.venv/bin/python scripts/generate_figures.py
-```
-
-## Analysis coverage
-
-- Primary descriptor and baseline benchmark: 600 runs
-- Estimator-by-representation matrix: 1,050 runs
-- Mono-placeholder exclusion sensitivity: 180 runs
-- Position-summary ablation: 30 runs
-- Exact-sequence grouped paired bootstrap: 5,000 replicates per split
-- Common no-Mono held-out comparison: 30 matched seeds per training scheme
-- TreeSHAP interpretation: 30 independently optimized seeds
-- Time-forward evaluation: 8 cutoff years
-- Scaffold-family ranking: 49 families
-- Strict sequence-component split: maximum cross-partition identity 0.6923
+The code is released under the [MIT License](LICENSE). CycPeptMPDB-derived records
+retain their source terms; the code license does not relicense third-party data.
+See [data provenance and reuse](docs/data.md).

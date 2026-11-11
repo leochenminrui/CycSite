@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: >-
+  If you use CycSite, please cite the accompanying paper in preferred-citation
+  and report the repository commit used. The DOI identifies preprint v1;
+  the manuscript is accepted in Journal of Cheminformatics.
+title: CycSite
+type: software
+authors:
+  - family-names: Chen
+    given-names: Minrui
+repository-code: https://github.com/leochenminrui/CycSite
+url: https://github.com/leochenminrui/CycSite
+license: MIT
+abstract: >-
+  Site-conditioned chemical-edit descriptors and reproducibility resources
+  for cyclic-peptide passive membrane-permeability modeling.
+keywords:
+  - cyclic peptides
+  - permeability
+  - cheminformatics
+  - site-conditioned modeling
+preferred-citation:
+  type: article
+  title: Site-Conditioned Edit Chemistry for Cyclic Peptide Permeability Modeling
+  authors:
+    - family-names: Chen
+      given-names: Minrui
+    - family-names: Zou
+      given-names: Guanjie
+    - family-names: Chen
+      given-names: Minqi
+    - family-names: Song
+      given-names: Bowen
+    - family-names: Saigo
+      given-names: Hiroto
+  year: 2026
+  month: 5
+  journal: Research Square
+  doi: 10.21203/rs.3.rs-9541490/v1
+  url: https://doi.org/10.21203/rs.3.rs-9541490/v1
+  notes: Preprint v1. Accepted in Journal of Cheminformatics.
